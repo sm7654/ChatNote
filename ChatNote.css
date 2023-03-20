@@ -101,7 +101,7 @@ nav {
     cursor: pointer;
 }
 .input_chat {
-    width: 95%;
+    flex-grow: 1;
     height: fit-content;
     border-radius: 11px;
     border: none;
@@ -111,7 +111,6 @@ nav {
 .input_chat:focus {
     outline: none;
 }
-
 .chat_wraper {
     width: 100%;
     max-height: calc(100vh - var(--height_header--)*2);
@@ -129,7 +128,7 @@ nav {
     margin-bottom: 10px;
     gap: 5px;
 }
-.avatar {
+.avatar_user {
     width: 20px;
     height: 20px;
 }
@@ -144,8 +143,49 @@ nav {
     position: relative;
     overflow-wrap: break-word;
     word-wrap: break-word;
-    background-color: #1875CB;
-    color: white;
+    background: #141E30;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;    
+}
+.menu_dark_light {
+    padding: 22px 6px 22px 0px;
+    box-sizing: content-box;
+    cursor: pointer;
+}
+.light_dark_wraper {
+    width: 130px;
+    height: fit-content;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    bottom: var(--height_header--);
+    right: 6px;
+    border-radius: 4px;
+    overflow: hidden;
+    background: white;
+    z-index: 9;
+}
+.heading_color_theme {
+    width: 100%;
+    font-size: 11px;
+    color: grey;
+    text-align: center;
+    padding: 4px 0px 2px 0px;
+}
+.dark_light_options {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 7px;
+    cursor: pointer;
+}
+.dark_light_options:hover {
+    background: #ededed;
+}
+.dark_bright_text {
+    font-size: 13px;
 }
 @media only screen and (max-width: 700px) {
     .logo {

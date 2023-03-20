@@ -34,7 +34,7 @@ function send() {
     var hours = now.getHours();
     var minutes = now.getMinutes().toString().padStart(2, "0");
     var time = hours + ":" + minutes;
-    var message = `<div class="messege_conteiner"><div class="message_box"><p style="color: #edededed; font-size: 12px;">Anonymous</p><p>${inputvalue}</p><span style="font-size: 11px; color: #edededed;">${time}</span></div><img src="./images/user (1).png" alt="" class="avatar"></div>`;
+    var message = `<div class="messege_conteiner"><div class="message_box"><p style="color: #edededed; font-size: 12px;">Anonymous</p><p>${inputvalue}</p><span style="font-size: 11px; color: #edededed;">${time}</span></div><img src="./images/user (1).png" alt="" class="avatar_user"></div>`;
     if (inputvalue !== '') {
         chat_wraper.insertAdjacentHTML('beforeend', message);
         document.getElementById("input").value = '';
@@ -43,4 +43,12 @@ function send() {
     }
     chat_wraper.scrollTop = chat_wraper.scrollHeight;
     console.log();(scrollHeight)
+}
+function theme_color() {
+    var x = document.getElementById("light_dark_wraper");
+    if (x.style.display === "none") {
+        x.style.display = "flex";
+    } else {
+        x.style.display = "none";
+    }
 }
