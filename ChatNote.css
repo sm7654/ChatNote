@@ -71,12 +71,11 @@ nav {
 
 .section_chat {
     height: calc(100vh - var(--height_header--));
-    background: url(./images/background.jpg);
-    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     overflow: hidden;
+    position: relative;
 }
 .input_send_wraper{
     width: 100%;
@@ -110,6 +109,14 @@ nav {
 }
 .input_chat:focus {
     outline: none;
+}
+.background {
+    width: 100%;
+    height: calc(100vh - var(--height_header--)*2);
+    background: url(./images/background.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 0;
 }
 .chat_wraper {
     width: 100%;
@@ -148,32 +155,40 @@ nav {
     background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: white;    
 }
-.menu_dark_light {
-    padding: 22px 6px 22px 0px;
+.menu_settings {
+    padding: 22px 13px 22px 6px;
     box-sizing: content-box;
     cursor: pointer;
 }
-.light_dark_wraper {
-    width: 130px;
-    height: fit-content;
-    display: none;
-    flex-direction: column;
+.settings_box {
+    height: calc(100vh - var(--height_header--)*2);
+    width: 0px;
     position: absolute;
-    bottom: var(--height_header--);
-    right: 6px;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
     border-radius: 4px;
-    overflow: hidden;
     background: white;
-    z-index: 9;
+    transition: all 0.3s ease-in-out;
 }
 .heading_color_theme {
     width: 100%;
     font-size: 11px;
     color: grey;
     text-align: center;
-    padding: 4px 0px 2px 0px;
+    padding: 7px 0px 7px 0px;
+    border-bottom: 1px solid #ededed;
 }
-.dark_light_options {
+.settings_wraper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow: hidden;
+    z-index: 9;
+}
+.setting_options {
     width: 100%;
     display: flex;
     align-items: center;
@@ -181,13 +196,26 @@ nav {
     padding: 7px;
     cursor: pointer;
 }
-.dark_light_options:hover {
+.setting_options:hover {
     background: #ededed;
 }
-.dark_bright_text {
+.setting_text {
     font-size: 13px;
 }
-@media only screen and (max-width: 700px) {
+.account_settings_wraper {
+    width: 100%;
+    padding: 10px 20px 10px 20px;
+    display: flex;
+    align-items: center;
+    background-color: #1875CB;
+    border-bottom-left-radius: 4px;
+}
+.you_account_settings {
+    font-size: 13px;
+    color: white;
+    font-weight: 600;
+}
+@media only screen and (max-width: 900px) {
     .logo {
         width: 130px;
     }

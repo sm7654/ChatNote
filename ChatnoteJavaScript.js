@@ -1,9 +1,14 @@
 function bars_clicked(){ 
+    var UserName = "anonymous";
+    document.getElementById("you_account_settings").innerHTML = UserName;
+    var x = document.getElementById("settings_wraper");
+
     var bars = document.getElementById("heello");
     var bar1 = document.getElementById("bar1");
     var bar2 = document.getElementById("bar2");
     var bar3 = document.getElementById("bar3");
-    if (bars.style.display == "none") {
+    if (x.style.width === "0px") {
+        x.style.width = "270px";
         bars.style.display = "block";
         bar1.style.rotate = "-45deg";
         bar1.style.position = "absolute";
@@ -17,6 +22,7 @@ function bars_clicked(){
         bar2.style.opacity ="1";
         bar3.style.position = "relative";
         bar3.style.rotate = "0deg";
+        x.style.width = "0px";
     }
 }
 document.addEventListener("keypress", function(event) {
@@ -45,7 +51,9 @@ function send() {
     console.log();(scrollHeight)
 }
 function theme_color() {
-    var x = document.getElementById("light_dark_wraper");
+    var UserName = "anonymous";
+    document.getElementById("you_account_settings").innerHTML = UserName;
+    var x = document.getElementById("settings_wraper");
     if (x.style.display === "none") {
         x.style.display = "flex";
     } else {
