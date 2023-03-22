@@ -25,7 +25,7 @@ header {
     position: relative;
 }
 nav {
-    width: 90%;
+    width: 95%;
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -33,6 +33,7 @@ nav {
 }
 .ul_header {
     display: flex;
+    align-items: center;
     gap: 20px;
 }
 .account {
@@ -56,11 +57,14 @@ nav {
     width: 180px;
 }
 .bars_wraper {
-    display: none;
+    padding: 12px 5px;
+    display: flex;
     flex-direction: column;
     gap: 3px;
     overflow: none;
     position: relative;
+    margin-left: 10px;
+    cursor: pointer;
 }
 .bars {
     width: 16px;
@@ -83,7 +87,7 @@ nav {
     background: #ededed;
     display: flex;
     flex-direction: row-reverse;
-    gap: 10px;
+    gap: 6px;
     justify-content: center;
     align-items: center;
 }
@@ -113,7 +117,7 @@ nav {
 .background {
     width: 100%;
     height: calc(100vh - var(--height_header--)*2);
-    background: url(./images/background.jpg);
+    background: url(./images/cool-background3.png);
     background-size: cover;
     position: absolute;
     top: 0;
@@ -137,6 +141,7 @@ nav {
 }
 .avatar_user {
     width: 20px;
+    color: #87ed24;
     height: 20px;
 }
 .message_box {
@@ -145,23 +150,22 @@ nav {
     padding: 10px;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 6px;
     border-radius: 5px;
     position: relative;
     overflow-wrap: break-word;
     word-wrap: break-word;
-    background: #141E30;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: transparent;
+    backdrop-filter: blur(7px) invert(10%);
     color: white;    
 }
-.menu_settings {
+.user_icon_next_to_input {
     padding: 22px 13px 22px 6px;
     box-sizing: content-box;
     cursor: pointer;
 }
 .settings_box {
-    height: calc(100vh - var(--height_header--)*2);
+    height: calc(100vh - var(--height_header--));
     width: 0px;
     position: absolute;
     top: 0;
@@ -169,8 +173,10 @@ nav {
     display: flex;
     flex-direction: column;
     border-radius: 4px;
+    border-top-right-radius: 0%;
     background: white;
     transition: all 0.3s ease-in-out;
+    z-index: 9999;
 }
 .heading_color_theme {
     width: 100%;
@@ -197,7 +203,7 @@ nav {
     cursor: pointer;
 }
 .setting_options:hover {
-    background: #ededed;
+    background: #B6B6B4 ;
 }
 .setting_text {
     font-size: 13px;
@@ -222,7 +228,7 @@ nav {
     .bars_wraper {
         display: flex;
     }
-    .ul_header {
+    .account_wraper {
         display: none;
     }
 }
