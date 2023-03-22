@@ -157,6 +157,7 @@ nav {
     word-wrap: break-word;
     background: transparent;
     backdrop-filter: blur(7px) invert(10%);
+    -webkit-backdrop-filter: blur(7px) invert(10%);
     color: white;    
 }
 .user_icon_next_to_input {
