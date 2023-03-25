@@ -30,7 +30,7 @@
     </header>
 
     <section class="section_chat">
-        <aside class="background"></aside>
+        <aside class="background" id="gg"></aside>
         <aside class="chat_wraper" id="chat_wraper">
 
             <div class="settings_box" id="settings_wraper">
@@ -70,15 +70,29 @@
                             </aside>
                         </div>
 
-                        <div class="dark_light_background_option_wraper" id="dark_light_background_option_wraper">
-                            <aside class="dark_light_options" id="light_option_background" onclick="Light_Mode_background()">
-                                <p class="setting_text" id="light_text_background">Light Mode</p>
-                            </aside>
-                            <aside class="dark_light_options" id="dark_option_background" onclick="Dark_Mode_background()">
-                                <p class="setting_text" id="dark_text_background">Dark Mode</p>
-                            </aside>
-                        </div>
-
+                        <ul class="background_collection_wraper" id="ul_background_options" style="transition: all 0.2s ease-in-out; overflow: hidden; opacity: 0; pointer-events: none;">
+                            <li class="background_option" name="url(./images/backgrounds/background.jpg)" onclick="background_update(this.getAttribute('name'))">
+                                Doudle Background
+                            </li>
+                            <li class="background_option" name="url(./images/backgrounds/background2.jpg)" onclick="background_update(this.getAttribute('name'))">
+                                Nature Background
+                            </li>
+                            <li class="background_option" name="url(./images/backgrounds/background3.jpg)" onclick="background_update(this.getAttribute('name'))">
+                                Highway Sunset Background 
+                            </li>
+                            <li class="background_option" name="url(./images/backgrounds/background4.jpg)" onclick="background_update(this.getAttribute('name'))">
+                                Lake Sunset Background
+                            </li>
+                            <li class="background_option" name="url(./images/backgrounds/cool-background.png)" onclick="background_update(this.getAttribute('name'))">
+                                Gredient-shaped Background - 1
+                            </li>
+                            <li class="background_option" name="url(./images/backgrounds/cool-background3.png)" onclick="background_update(this.getAttribute('name'))">
+                                Gredient-shaped Background - 2
+                            </li>
+                            <li class="background_option" name="url(./images/backgrounds/cool-background\ 2.png)" onclick="background_update(this.getAttribute('name'))">
+                                Gredient-shaped Background - 3
+                            </li>
+                        </ul>
                     </div>
                 </aside>
                 <aside class="account_settings_wraper">
