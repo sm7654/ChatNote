@@ -16,7 +16,6 @@
             <ul class="ul_header">
                 <a href="./log in.html" class="account_wraper"><button class="account">Login</button></a>
                 <a href="" class="account_wraper"><button class="account">Register</button></a>
-
                 <aside class="bars_wraper" onclick="bars_clicked()" id="bars_wraper">
                     <div class="bar1 bars" id="bar1"></div>
                     <div class="bar2 bars" id="bar2"></div>
@@ -115,9 +114,11 @@
                 
         </aside>
         <aside class="input_send_wraper">
-            <img src="./images/user (1).png" alt="you account" class="avatar_user user_icon_next_to_input">
-            <input type="text" placeholder="Type your messege....." class="input_chat" id="input">
-            <button class="send_button"><img src="./images/send.png" alt="send" style="width: 30px;" onclick="send()" id="button"></button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" style="cursor: pointer; padding: 10px 10px 10px 4px; box-sizing: content-box;" fill="grey" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+              </svg>
+            <input type="text" placeholder="Type your messege....." class="input_chat" id="input" >
+            <button class="send_button"><img src="./images/send.png" alt="send" style="width: 30px; transform: scaleY(-1); transform: scaleX(-1);" id="button"></button>
             
         </aside>
     </section>
