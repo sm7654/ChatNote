@@ -210,8 +210,12 @@ nav {
 .setting_options:hover {
     background: #B6B6B4;
 }
+.account_options {
+    text-decoration: none; color: black; display: none;
+}
 .setting_text {
     font-size: 13px;
+    text-decoration: none;
 }
 .account_settings_wraper {
     width: 100%;
@@ -249,5 +253,8 @@ nav {
     }
     .account_wraper {
         display: none;
+    }
+    .account_options {
+        display: flex;
     }
 }
