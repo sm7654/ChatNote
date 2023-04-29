@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+    --width--: 400px;
+    --height_header--: 60px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background: url(https://cdn.wallpapersafari.com/80/6/5dzJbi.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+main {
+    width: 100%;
+    height: calc(100% - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+header {
+    width: 100%;
+    height: var(--height_header--);
+    background: white;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+nav {
+    width: 95%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ul_header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.logo {
+    width: 180px;
+}
+h1 {
+    padding: 10px 0px;
+    font-size: 30px;
+}
+.user_image {
+    width: var(--width--);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ededed;
+    border-bottom: 1px solid white;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+
+}
+.user_image > img {
+    width: 65px;
+}
+section {
+    width: var(--width--);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #ededed;
+    border-radius: 20px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.continu_options_wraper {
+    padding: 25px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.continu_options {
+    width: 90%;
+    height: 40px;
+    font-weight: 700;
+    border: 1px solid #AAAA;
+    border-radius: 30px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 23px;
+    cursor: pointer;
+}
+.or {
+    width: 90%;
+    height: 1px;
+    background: linear-gradient(to right, #1875CB, #87ed24);
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.or::after {
+    content: 'or';
+    padding: 5px 20px 5px 20px;
+    font-size: 15px;
+    background-color: #ededed;
+    top: -14px;
+    position: absolute;
+}
+.user_details {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wraper_inputs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+.input_title {
+    font-size: 14px;
+}
+.input {
+    width: 100%;
+    height: 35px;
+    border: none;
+    padding-left: 15px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.input:focus {
+    outline: 1.2px solid #1875CB;
+}
+.remember_support {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 13px;
+    margin-top: 10px;
+}
+.forgot_password {
+    text-decoration: none;
+    color: black;
+}
+.forgot_password:hover {
+    color: #1875CB;
+}
+.submit_button {
+    width: 100%;
+    height: 32px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background: linear-gradient(to right, #1875CB, #87ed24);
+    border: none;
+    color: white;
+    cursor: pointer;
+}

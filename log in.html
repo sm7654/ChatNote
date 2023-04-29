@@ -4,55 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - ChatNote</title>
+    <link rel="stylesheet" href="./log_in.css">
+    <title>ChatNote - Login</title>
     <style>
-        body {
-            height: 100svh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .main_wraper {
-            width: 450px;
-            height: 550px;
-            background: #001d3d;
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            border-radius: 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .button {
-            width: 200px;
-            height: 30px;
-            border-radius: 10px;
-            border: none;
-            background: #ffc300;
-        }
-        .input {
-            width: 250px;
-            height: 30px;
-            background: #000814;
-            color: white;
-        }
-        .inouts {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 10px;
-        }
+
     </style>
 </head>
 <body>
-    <div class="main_wraper"> 
-        <section class="inouts">
-            <input type="text" class="input">
-            <button class="button">sign in</button>
-        </section>
+    <header id="header">
+        <nav>
+            <a href="./index.html"><img class="logo" src="./images/logo-black-removebg-preview.png" alt="logo" id="logo"></a>
+        </nav>
+    </header>
+    
+    <main>
 
-    </div>
+        <aside class="user_image">        <h1>Login</h1>        </aside>
+        <section>
+            <aside style="width: 100%;">
+                <div class="continu_options_wraper">
+                    <div class="continu_options google">
+                        <img src="./images/google.png" alt="">
+                        <p>Continue with Google</p>
+                        <div style="width: 1px; height: 1px;"></div>
+                    </div>
+                    <div class="continu_options facebook">
+                        <img src="./images/facebook.png" alt="">
+                        <p>Continue with Facebook</p>
+                        <div style="width: 1px; height: 1px;"></div>
+                    </div>
+
+                </div>
+            </aside>
+
+            <div class="or"></div>
+            <form class="user_details">
+                <div class="wraper_inputs">
+                    <div class="username_wraper">
+                        <input type="text" name="" id="username_value" class="input" placeholder="Enter Username" required>
+                    </div>
+                    <div class="password_wraper">
+                        <input type="password" name="" id="Password_value" class="input" placeholder="Enter Password" required>
+                    </div>
+                </div>
+                <div class="remember_support">
+                    <label style="display: flex; align-items: center; gap: 2px; cursor: pointer;"><input type="checkbox">Remember Me</label>
+                    <a href="./log in.html" class="forgot_password">Forgot Your Password?</a>
+                </div>
+                <button type="submit" class="submit_button">logIn</button>
+            </form>
+        </section>
+    </main>
 </body>
 </html>
