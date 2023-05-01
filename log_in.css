@@ -14,7 +14,7 @@ body {
     width: 100%;
     height: 100vh;
     overflow-x: hidden;
-    background: url(https://cdn.wallpapersafari.com/80/6/5dzJbi.jpg);
+    background: url(https://4kwallpapers.com/images/wallpapers/mountains-winter-daytime-glacier-blue-mountain-range-5k-2560x1080-1248.jpg);
     background-size: cover;
     background-position: center center;
 }
@@ -61,11 +61,12 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #ededed;
+    background: transparent;
+    backdrop-filter: blur(94px);
     border-bottom: 1px solid white;
     border-top-right-radius: 3px;
     border-top-left-radius: 3px;
-
+    color: white;
 }
 .user_image > img {
     width: 65px;
@@ -76,7 +77,8 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: #ededed;
+    background: transparent;
+    backdrop-filter: blur(94px);
     border-radius: 20px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
@@ -110,14 +112,6 @@ section {
     justify-content: center;
     position: relative;
 }
-.or::after {
-    content: 'or';
-    padding: 5px 20px 5px 20px;
-    font-size: 15px;
-    background-color: #ededed;
-    top: -14px;
-    position: absolute;
-}
 .user_details {
     width: 90%;
     display: flex;
@@ -143,9 +137,13 @@ section {
     padding-left: 15px;
     font-size: 13px;
     font-weight: 600;
+    color: black;
+    background: whitesmoke;
+    border-bottom: 0px solid black;
 }
 .input:focus {
-    outline: 1.2px solid #1875CB;
+    border-bottom: 1.2px solid black;
+    outline: none;
 }
 .remember_support {
     display: flex;
@@ -153,13 +151,22 @@ section {
     justify-content: space-between;
     font-size: 13px;
     margin-top: 10px;
+    color: white;
+}
+.remember_support > label {
+    transition: all 200ms ease-in-out;
+}
+.remember_support > label:hover {
+    color: #121212;
 }
 .forgot_password {
     text-decoration: none;
-    color: black;
+    color: white;
+    position: relative;
+    transition: all 200ms ease-in-out;
 }
 .forgot_password:hover {
-    color: #1875CB;
+    color: #121212;
 }
 .submit_button {
     width: 100%;
